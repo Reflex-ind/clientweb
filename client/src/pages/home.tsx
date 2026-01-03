@@ -367,9 +367,9 @@ export default function Home() {
             </div>
           </div>
           <div className="pt-10 md:pt-12 flex flex-col md:flex-row justify-between items-center gap-6 text-center">
-            <p className="text-slate-500 text-[8px] md:text-[10px] uppercase tracking-[0.4em] font-bold">©2026 Pratik GFX — All Rights Reserved 
+            <p className="text-slate-500 text-[8px] md:text-[10px] uppercase tracking-[0.4em] font-bold">©2026 Pratik GFX — All Rights Reserved  
               <br className="md:hidden" />
-              Website Designed & Developed by: Nation Cheats
+              | Website Designed & Developed by: Nation Cheats
             </p>
             <div className="flex gap-4 md:gap-8 items-center">
               <p className="text-slate-500 text-[8px] md:text-[10px] uppercase tracking-[0.4em] font-bold">Visualizing the future</p>
