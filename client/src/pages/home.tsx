@@ -5,11 +5,11 @@ import { MessageSquare, Send, User, ShieldCheck, Mail, MapPin, Phone, Github, Tw
 
 const WORK_ITEMS = [
   { id: 1, title: "", category: "Gaming Thumbnail", image: "https://raw.githubusercontent.com/Reflex-ind/clientweb/refs/heads/main/2n550158oQ4YkGmwg3GfRyFoMo.png" },
-  { id: 2, title: "", category: "Thumbnail Design", image: "https://raw.githubusercontent.com/Reflex-ind/clientweb/refs/heads/main/8qpPbjoo5GigZgNwj4Dk5A7wk8.png" },
-  { id: 3, title: "", category: "GFX Concept", image: "https://raw.githubusercontent.com/Reflex-ind/clientweb/refs/heads/main/JbocMDvY4arI4KuZWlDOkp95E9k.png" },
-  { id: 4, title: "", category: "High CTR Thumbnail", image: "https://raw.githubusercontent.com/Reflex-ind/clientweb/refs/heads/main/ZfSvmwffqsppEBJ959hYBpExfFE.png" },
-  { id: 5, title: "", category: "Social Media GFX", image: "https://raw.githubusercontent.com/Reflex-ind/clientweb/refs/heads/main/jSPBpto0U0lq3tQv7RdHOSgaRY.png" },
-  { id: 6, title: "", category: "Motion GFX", image: "https://raw.githubusercontent.com/Reflex-ind/clientweb/refs/heads/main/qWA8sEm4oPt6Z68NGUJts5xTic.png" },
+  { id: 2, title: "", category: "Gaming Thumbnail", image: "https://raw.githubusercontent.com/Reflex-ind/clientweb/refs/heads/main/8qpPbjoo5GigZgNwj4Dk5A7wk8.png" },
+  { id: 3, title: "", category: "Podcast Thumbnail", image: "https://raw.githubusercontent.com/Reflex-ind/clientweb/refs/heads/main/JbocMDvY4arI4KuZWlDOkp95E9k.png" },
+  { id: 4, title: "", category: "Sports Documentary Thumbnail", image: "https://raw.githubusercontent.com/Reflex-ind/clientweb/refs/heads/main/ZfSvmwffqsppEBJ959hYBpExfFE.png" },
+  { id: 5, title: "", category: "Gaming Thumbnail", image: "https://raw.githubusercontent.com/Reflex-ind/clientweb/refs/heads/main/jSPBpto0U0lq3tQv7RdHOSgaRY.png" },
+  { id: 6, title: "", category: "Financial Transformation", image: "https://raw.githubusercontent.com/Reflex-ind/clientweb/refs/heads/main/qWA8sEm4oPt6Z68NGUJts5xTic.png" },
 ];
 
 const FAQS = [
