@@ -1,0 +1,71 @@
+Build a pixel-perfect clone of 'aryandzn.framer.website' with a sophisticated Client-Admin Chat System, using React, Tailwind CSS, Framer Motion for the frontend, and a Node.js/Express backend with Socket.IO for real-time chat functionality.
+
+1. Core Visuals & Layout:
+
+Theme: Ultra-clean, professional 'Modern Minimalist' theme with a pure white background and soft grey accents.
+
+Branding: Place the text 'Digital Designer' in the exact center using a bold, premium sans-serif font (like Inter or Montserrat).
+
+Navbar: On the top right, create three clean tabs: 'Home', 'About', 'Contact', and a new 'Chat' tab. The navigation should be sticky or follow a fixed header layout.
+
+2. The Signature 3D Scroll Effect (Aryan Dzn Style):
+
+Create a 'GTX Work' section with a 2-column or 3-column grid of YouTube thumbnails.
+
+The Animation: Implement a 3D Perspective Tilt effect on each thumbnail card using useScroll and useTransform.
+
+Scroll Down: As the user scrolls down, the cards must tilt backward on the X-axis (Rotation X) from 0° to -15°.
+
+Scroll Up: When scrolling back up, they should smoothly return to 0°.
+
+Smoothing: Use a spring transition (stiffness: 100, damping: 30) for a fluid, high-end feel.
+
+Perspective: Ensure the parent container has perspective: 1200px to make the 3D depth look realistic.
+
+3. Section Content:
+
+Home: Grid of 6 thumbnails (use placeholder images with 'GTX' titles for now).
+
+About: A clean, centered text section with the bio: 'I am a professional GFX designer with 3+ years of experience specializing in high-CTR YouTube thumbnails and gaming brand identities.'
+
+Contact: A modern form with 'Name', 'Reason for Contact', and 'Message' fields. Style it with minimal borders and a sleek submit button.
+
+4. New Feature: Client-Admin Direct Chat Page:
+
+Tab Trigger: The 'Chat' tab in the navbar should open a dedicated chat page/view.
+
+Chat Interface: Design a simple, intuitive chat interface similar to Discord's direct message layout. It should include:
+
+A main chat window to display messages.
+
+An input field for typing messages.
+
+A 'Send' button.
+
+User Status Indicators: Implement a visible status for the Admin (you).
+
+Online: Green dot/icon next to 'Admin'.
+
+Offline: Grey dot/icon next to 'Admin'.
+
+Do Not Disturb (DND): Red dot/icon next to 'Admin'.
+
+Initial State: Default to 'Online' or 'Offline' for demo.
+
+Real-time Communication: Use Socket.IO to enable real-time message exchange between the client (website visitor) and the Admin.
+
+Backend: Create a simple Node.js/Express server that handles WebSocket connections via Socket.IO for message broadcasting and user status management.
+
+Admin Panel (Simplified): For demonstration, assume a basic way to toggle admin status (Online/Offline/DND) on the server side or from a simple mock-up.
+
+Message History: For demo, a basic in-memory message history (not persistent across reloads) is acceptable.
+
+5. Technical Requirements:
+
+Full Stack Project: Configure Replit as a full-stack project with separate frontend (React) and backend (Node.js/Express).
+
+Use React Router or state-based switching for tab navigation.
+
+Ensure the entire site is 100% responsive for Mobile, Tablet, and Desktop.
+
+Set up the Contact form to be 'Ready to Connect' with an email service like EmailJS."

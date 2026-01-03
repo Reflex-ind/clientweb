@@ -39,22 +39,16 @@ export default function Chat() {
             </Link>
             <div className="flex items-center gap-3">
               <div className="w-12 h-12 rounded-2xl bg-white/10 flex items-center justify-center border border-white/10">
-                {isAdmin ? <ShieldCheck className="text-blue-400" /> : <User className="text-slate-400" />}
+                <User className="text-slate-400" />
               </div>
               <div>
-                <h3 className="font-bold text-lg leading-tight">{isAdmin ? "Admin Support" : "Client Portal"}</h3>
+                <h3 className="font-bold text-lg leading-tight">Admin Support</h3>
                 <p className="text-[10px] text-white/40 uppercase tracking-widest font-bold flex items-center gap-2">
-                  <span className="w-2 h-2 rounded-full bg-green-500" /> Project Status: In Discussion
+                  <span className="w-2 h-2 rounded-full bg-green-500" /> Online
                 </p>
               </div>
             </div>
           </div>
-          <button 
-            onClick={() => setIsAdmin(!isAdmin)}
-            className="text-[10px] uppercase tracking-[0.2em] font-bold px-6 py-2 rounded-full border border-white/20 hover:bg-white hover:text-slate-900 transition-all"
-          >
-            Switch to {isAdmin ? "Client" : "Admin"}
-          </button>
         </div>
 
         {/* Messages Area */}
