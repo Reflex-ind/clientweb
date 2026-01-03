@@ -100,7 +100,7 @@ export default function Home() {
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 md:px-12 py-6 md:py-10 bg-white/60 backdrop-blur-xl border-b border-slate-200/50">
         <div className="text-xl md:text-2xl font-bold tracking-tighter uppercase font-bebas-neue text-slate-900">
-          GFX©STUDIO
+          PRATIK GFX
         </div>
         
         {/* Mobile Menu Button */}
