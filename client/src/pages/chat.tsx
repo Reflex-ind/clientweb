@@ -95,6 +95,6 @@ export default function Chat() {
           </button>
         </div>
       </motion.div>
-    </motion.div>
+    </div>
   );
 }
