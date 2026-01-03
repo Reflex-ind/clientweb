@@ -1,0 +1,57 @@
+Aapki portfolio site ko aur bhi complete aur professional banane ke liye, maine "FAQ section" aur "Footer" ko include karke ye final advanced prompt taiyaar kiya hai. Ise Replit AI Agent mein paste karein:
+
+Full-Stack Pro GFX Portfolio Prompt (With FAQ & Footer)
+"Build a pixel-perfect, high-end GFX Portfolio website based on 'aryandzn.framer.website' using React, Tailwind CSS, Framer Motion, and Socket.IO for real-time chat.
+
+1. Theme & Layout:
+
+Colors: Modern Minimalist White & Grey UI.
+
+Header: 'Digital Designer' text in the center. Right-side navigation tabs: 'Home', 'About', 'Contact', and 'Chat'.
+
+2. Home Section (Signature Animation):
+
+Display a grid of 'GTX Work' YouTube thumbnails.
+
+3D Scroll Tilt: Implement the 3D perspective effect. As the user scrolls down, thumbnails must tilt backward on the X-axis (rotateX). Use a smooth spring transition.
+
+3. NEW: Frequently Asked Questions (FAQ) Section:
+
+Add a clean FAQ section with an accordion-style design.
+
+Header: Bold 'Frequently Asked Questions' title.
+
+Functionality: When a question is clicked, it should smoothly expand to show the answer (use Framer Motion AnimatePresence).
+
+Sample Questions: 'What kind of thumbnails do you create?', 'How quickly can I expect delivery?', 'What niches are you specialized in?'.
+
+4. NEW: Professional Dark Footer:
+
+Add a high-contrast dark footer (Black background).
+
+Left Side: Your Logo/Name, a short professional bio, and contact details (Email & Phone).
+
+Right Side: Quick links like 'Portfolio', 'Home', and 'Get Started'.
+
+Bottom: 'All Rights Reserved @2026 Pratik GFX'.
+
+5. Real-Time Chat & Status:
+
+A dedicated 'Chat' page with a Discord-like interface.
+
+Admin Status: Show a status dot for the Admin: Green (Online), Red (DND), or Grey (Offline).
+
+Logic: Use Socket.IO for real-time messaging between the visitor and Admin.
+
+6. Contact & About:
+
+About: Professional bio about 3+ years of GFX experience.
+
+Contact: Form with Name, Reason, and Message fields, integrated with EmailJS for direct email delivery."
+
+Aapke liye Additional Tips:
+FAQ Accordion: AI ko bolna ki FAQ mein "plus (+)" icon add kare jo click hone par "minus (-)" ban jaye, bilkul aapke screenview image ki tarah.
+
+Footer Icons: Footer mein social media icons (Twitter, Instagram, Behance) ke placeholders zaroor mangna, ye client ko bahut impress karta hai.
+
+Real-time Status: Replit Agent se kehna ki Admin status ko toggle karne ke liye ek hidden "Admin Key" rakhe taaki aap apna status khud change kar sakein.
