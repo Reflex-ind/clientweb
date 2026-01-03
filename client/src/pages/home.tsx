@@ -4,9 +4,9 @@ import { Link } from "wouter";
 import { MessageSquare, Send, User, ShieldCheck, Mail, MapPin, Phone, Github, Twitter, Instagram, Plus, Minus, ArrowRight, ExternalLink, Menu, X } from "lucide-react";
 
 const WORK_ITEMS = [
-  { id: 1, title: "CYBERPUNK 2077", category: "Gaming Thumbnail", image: "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&q=80&w=800" },
-  { id: 2, title: "VALORANT CLUTCH", category: "Thumbnail Design", image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&q=80&w=800" },
-  { id: 3, title: "MINECRAFT SURVIVAL", category: "GFX Concept", image: "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&q=80&w=800" },
+  { id: 1, title: "CYBERPUNK 2077", category: "Gaming Thumbnail", image: "/attached_assets/qpTvDF1hYmvxHiur0mmzO9WdpA_1767464268407.avif" },
+  { id: 2, title: "VALORANT CLUTCH", category: "Thumbnail Design", image: "/attached_assets/SQpqR37AQD2GLW2eO980qnUXE2o_1767464272380.avif" },
+  { id: 3, title: "MINECRAFT SURVIVAL", category: "GFX Concept", image: "/attached_assets/62q8cwY4E4eMtCgtByKExO050_1767464281371.avif" },
   { id: 4, title: "WARZONE SEASON 5", category: "High CTR Thumbnail", image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=800" },
   { id: 5, title: "GTA V RP MOMENTS", category: "Social Media GFX", image: "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&fit=crop&q=80&w=800" },
   { id: 6, title: "APEX LEGENDS", category: "Motion GFX", image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&q=80&w=800" },
