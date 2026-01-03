@@ -95,9 +95,9 @@ export default function Home() {
   ];
 
   return (
-    <div className="min-h-screen bg-white text-slate-900 font-plus-jakarta selection:bg-slate-900 selection:text-white overflow-x-hidden">
+    <div className="min-h-screen bg-[#F8F9FA] text-[#1A1A1A] font-plus-jakarta selection:bg-slate-900 selection:text-white overflow-x-hidden">
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-12 py-10 bg-white/80 backdrop-blur-md border-b border-slate-100">
+      <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-12 py-10 bg-white/60 backdrop-blur-xl border-b border-slate-200/50">
         <div className="w-1/3 text-2xl font-bold tracking-tighter uppercase font-bebas-neue text-slate-900">
           GFX©STUDIO
         </div>
@@ -107,14 +107,17 @@ export default function Home() {
             <button
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
-              className={`transition-all ${activeTab === tab.id ? "text-slate-900" : "text-slate-400 hover:text-slate-600"}`}
+              className={`transition-all relative py-2 ${activeTab === tab.id ? "text-slate-900" : "text-slate-400 hover:text-slate-600"}`}
               data-testid={`tab-${tab.id}`}
             >
               {tab.label}
+              {activeTab === tab.id && (
+                <motion.div layoutId="nav-underline" className="absolute bottom-0 left-0 right-0 h-0.5 bg-slate-900" />
+              )}
             </button>
           ))}
           <Link href="/chat">
-            <a className="bg-slate-900 text-white px-6 py-2 rounded-full flex items-center gap-2 hover:scale-105 transition-all shadow-lg shadow-slate-900/10">
+            <a className="bg-slate-900 text-white px-6 py-2 rounded-full flex items-center gap-2 hover:bg-slate-800 transition-all shadow-lg shadow-slate-900/10 hover:-translate-y-0.5 active:translate-y-0">
               <MessageSquare size={12} /> Chat
             </a>
           </Link>
@@ -132,19 +135,33 @@ export default function Home() {
               transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
             >
               {/* Hero */}
-              <section className="h-[70vh] flex flex-col items-center justify-center text-center px-12">
-                <h1 className="text-[15vw] font-bold leading-[0.75] tracking-[-0.06em] uppercase font-bebas-neue text-slate-900">
+              <section className="h-[75vh] flex flex-col items-center justify-center text-center px-12 relative overflow-hidden">
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white via-transparent to-transparent opacity-50" />
+                <h1 className="text-[16vw] font-bold leading-[0.75] tracking-[-0.07em] uppercase font-bebas-neue text-slate-900 relative z-10 drop-shadow-sm">
                   Digital<br />Designer
                 </h1>
-                <p className="mt-12 text-[11px] text-slate-400 uppercase tracking-[0.6em] font-bold">
-                  Premium Work Portfolio — Vol. 2
-                </p>
+                <motion.div 
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: 0.5 }}
+                  className="mt-12 flex items-center gap-4 relative z-10"
+                >
+                  <span className="h-px w-12 bg-slate-300" />
+                  <p className="text-[11px] text-slate-500 uppercase tracking-[0.6em] font-bold">
+                    Elevating Digital Experiences
+                  </p>
+                  <span className="h-px w-12 bg-slate-300" />
+                </motion.div>
               </section>
 
               {/* Work Section */}
               <section className="px-12 pb-40 max-w-[1600px] mx-auto">
-                <div className="mb-20 flex flex-col md:flex-row items-baseline justify-between border-b border-slate-200 pb-12">
-                  <h2 className="text-8xl font-bold tracking-tighter uppercase font-bebas-neue text-slate-900">GTX Work</h2>
+                <div className="mb-24 flex flex-col md:flex-row items-end justify-between border-b border-slate-200 pb-12 gap-8">
+                  <div className="space-y-4">
+                    <span className="text-slate-400 text-xs font-bold uppercase tracking-[0.3em]">Featured Projects</span>
+                    <h2 className="text-8xl font-bold tracking-tighter uppercase font-bebas-neue text-slate-900 leading-none">Selected<br />Work</h2>
+                  </div>
+                  <p className="text-slate-500 text-sm max-w-[300px] font-medium leading-relaxed italic">A collection of high-impact visuals crafted for the world's most innovative creators.</p>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-24">
                   {WORK_ITEMS.map((item) => (
@@ -153,37 +170,40 @@ export default function Home() {
                 </div>
               </section>
 
-              {/* Aryan Design Promo - Image Match */}
+              {/* Aryan Design Promo - Clean Premium Version */}
               <section className="px-12 py-40">
-                <div className="max-w-7xl mx-auto bg-slate-950 rounded-[3rem] overflow-hidden flex flex-col md:flex-row items-center p-12 md:p-24 relative">
-                  <div className="w-full md:w-1/2 mb-12 md:mb-0">
+                <div className="max-w-7xl mx-auto bg-white rounded-[4rem] overflow-hidden flex flex-col md:flex-row items-center p-12 md:p-20 shadow-[0_40px_100px_rgba(0,0,0,0.04)] border border-slate-100 relative group">
+                  <div className="w-full md:w-5/12 mb-12 md:mb-0 relative">
+                    <div className="absolute inset-0 bg-slate-900/5 rounded-3xl -rotate-3 group-hover:rotate-0 transition-transform duration-700" />
                     <img 
                       src="https://images.unsplash.com/photo-1614028674026-a65e31bfd27c?auto=format&fit=crop&q=80&w=800" 
                       alt="Designer" 
-                      className="w-full h-[500px] object-cover rounded-3xl grayscale hover:grayscale-0 transition-all duration-700"
+                      className="relative w-full h-[550px] object-cover rounded-3xl grayscale hover:grayscale-0 transition-all duration-700 shadow-2xl"
                     />
                   </div>
-                  <div className="w-full md:w-1/2 md:pl-20 space-y-8">
-                    <h2 className="text-4xl md:text-6xl font-bold text-white tracking-tight uppercase font-plus-jakarta leading-none">
-                      Let's Design <span className="text-slate-500 underline">Next-Level</span> Thumbnails.
-                    </h2>
-                    <p className="text-slate-400 text-lg md:text-xl leading-relaxed font-medium">
-                      I'm Pratik, a professional thumbnail designer who helps creators and brands stand out with high-impact, scroll-stopping thumbnails. From YouTube and Reels thumbnails to ads and corporate visuals.
+                  <div className="w-full md:w-7/12 md:pl-24 space-y-10">
+                    <div className="space-y-4">
+                      <span className="text-slate-400 text-[10px] font-bold uppercase tracking-[0.4em]">Collaboration</span>
+                      <h2 className="text-5xl md:text-7xl font-bold text-slate-900 tracking-tight uppercase font-plus-jakarta leading-none">
+                        Let's Design <br /><span className="text-slate-300">Next-Level</span> Visuals.
+                      </h2>
+                    </div>
+                    <p className="text-slate-500 text-xl md:text-2xl leading-relaxed font-medium">
+                      I help creators stand out with high-impact, scroll-stopping graphics. From YouTube thumbnails to full brand identities.
                     </p>
-                    <button className="bg-white text-slate-900 px-12 py-5 rounded-full font-bold uppercase tracking-widest text-xs hover:scale-105 transition-all shadow-xl">
-                      Let's Collaborate
+                    <button className="bg-slate-900 text-white px-14 py-6 rounded-full font-bold uppercase tracking-widest text-xs hover:bg-slate-800 hover:-translate-y-1 transition-all shadow-2xl shadow-slate-900/20 active:translate-y-0">
+                      Start Your Project
                     </button>
                   </div>
                 </div>
               </section>
 
-              {/* FAQ Section */}
-              <section className="px-12 py-40 bg-slate-50">
+              {/* FAQ Section - Clean White */}
+              <section className="px-12 py-40 bg-white">
                 <div className="max-w-4xl mx-auto">
-                  <div className="text-center mb-24">
-                    <span className="bg-white px-6 py-2 rounded-full text-[10px] font-bold uppercase tracking-[0.3em] border border-slate-200 shadow-sm">FAQ</span>
-                    <h2 className="text-7xl font-bold tracking-tighter uppercase font-bebas-neue text-slate-900 mt-8 leading-none">Frequently Asked Questions.</h2>
-                    <p className="text-slate-500 mt-6 text-xl tracking-tight font-medium">Everything You Need To Know Before Working Together.</p>
+                  <div className="text-center mb-32">
+                    <span className="text-slate-400 text-[10px] font-bold uppercase tracking-[0.4em]">Assistance</span>
+                    <h2 className="text-7xl font-bold tracking-tighter uppercase font-bebas-neue text-slate-900 mt-6 leading-none">Common Inquiries.</h2>
                   </div>
                   <div className="space-y-2">
                     {FAQS.map((faq) => (
