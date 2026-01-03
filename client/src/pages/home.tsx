@@ -4,12 +4,12 @@ import { Link } from "wouter";
 import { MessageSquare, Send, User, ShieldCheck, Mail, MapPin, Phone, Github, Twitter, Instagram, Plus, Minus, ArrowRight, ExternalLink, Menu, X } from "lucide-react";
 
 const WORK_ITEMS = [
-  { id: 1, title: "CYBERPUNK 2077", category: "Gaming Thumbnail", image: "/attached_assets/qpTvDF1hYmvxHiur0mmzO9WdpA_1767464268407.avif" },
-  { id: 2, title: "VALORANT CLUTCH", category: "Thumbnail Design", image: "/attached_assets/SQpqR37AQD2GLW2eO980qnUXE2o_1767464272380.avif" },
-  { id: 3, title: "MINECRAFT SURVIVAL", category: "GFX Concept", image: "/attached_assets/62q8cwY4E4eMtCgtByKExO050_1767464281371.avif" },
-  { id: 4, title: "WARZONE SEASON 5", category: "High CTR Thumbnail", image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=800" },
-  { id: 5, title: "GTA V RP MOMENTS", category: "Social Media GFX", image: "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&fit=crop&q=80&w=800" },
-  { id: 6, title: "APEX LEGENDS", category: "Motion GFX", image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&q=80&w=800" },
+  { id: 1, title: "", category: "Gaming Thumbnail", image: "https://raw.githubusercontent.com/Reflex-ind/clientweb/refs/heads/main/2n550158oQ4YkGmwg3GfRyFoMo.png" },
+  { id: 2, title: "", category: "Thumbnail Design", image: "https://raw.githubusercontent.com/Reflex-ind/clientweb/refs/heads/main/8qpPbjoo5GigZgNwj4Dk5A7wk8.png" },
+  { id: 3, title: "", category: "GFX Concept", image: "https://raw.githubusercontent.com/Reflex-ind/clientweb/refs/heads/main/JbocMDvY4arI4KuZWlDOkp95E9k.png" },
+  { id: 4, title: "", category: "High CTR Thumbnail", image: "https://raw.githubusercontent.com/Reflex-ind/clientweb/refs/heads/main/ZfSvmwffqsppEBJ959hYBpExfFE.png" },
+  { id: 5, title: "", category: "Social Media GFX", image: "https://raw.githubusercontent.com/Reflex-ind/clientweb/refs/heads/main/jSPBpto0U0lq3tQv7RdHOSgaRY.png" },
+  { id: 6, title: "", category: "Motion GFX", image: "https://raw.githubusercontent.com/Reflex-ind/clientweb/refs/heads/main/qWA8sEm4oPt6Z68NGUJts5xTic.png" },
 ];
 
 const FAQS = [
