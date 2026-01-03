@@ -304,8 +304,8 @@ export default function Home() {
                 <div className="space-y-10 md:space-y-12">
                   <div className="space-y-4 text-center md:text-left">
                     <h3 className="text-[10px] uppercase tracking-widest font-bold text-slate-400">Drop a line</h3>
-                    <p className="text-3xl md:text-5xl font-bold tracking-tighter font-bebas-neue">hello@pratikgfx.com</p>
-                    <p className="text-xl md:text-2xl font-bold tracking-tighter font-bebas-neue text-slate-400">+91 8159099504</p>
+                    <p className="text-3xl md:text-5xl font-bold tracking-tighter font-bebas-neue">pratikgfx@nationcheats.shop/</p>
+                    <p className="text-xl md:text-2xl font-bold tracking-tighter font-bebas-neue text-slate-400">+91 99XXXXXX99</p>
                   </div>
                 </div>
                 <div className="bg-slate-50 p-8 md:p-12 rounded-2xl md:rounded-3xl border border-slate-200 shadow-xl">
@@ -340,10 +340,10 @@ export default function Home() {
               </p>
               <div className="space-y-2">
                 <p className="flex items-center gap-3 text-sm text-white font-medium truncate">
-                  <Mail size={16} className="text-slate-500 flex-shrink-0" /> aryandznsworks@gmail.com
+                  <Mail size={16} className="text-slate-500 flex-shrink-0" /> pratikgfx@nationcheats.shop
                 </p>
                 <p className="flex items-center gap-3 text-sm text-white font-medium">
-                  <Phone size={16} className="text-slate-500 flex-shrink-0" /> +91 8159099504
+                  <Phone size={16} className="text-slate-500 flex-shrink-0" /> +91 99XXXXXX99
                 </p>
               </div>
             </div>
@@ -367,9 +367,9 @@ export default function Home() {
             </div>
           </div>
           <div className="pt-10 md:pt-12 flex flex-col md:flex-row justify-between items-center gap-6 text-center">
-            <p className="text-slate-500 text-[8px] md:text-[10px] uppercase tracking-[0.4em] font-bold">©2026 Pratik GFX — All Rights Reserved</p>
-            <div className="flex gap-4 md:gap-8 items-center">
-              <p className="text-slate-500 text-[8px] md:text-[10px] uppercase tracking-[0.4em] font-bold">Visualizing the future</p>
+            <p className="text-slate-500 text-[8px] md:text-[10px] uppercase tracking-[0.4em] font-bold text-center">
+              © {new Date().getFullYear()} Pratik GFX — All Rights Reserved <br /> Website Designed & Developed by: Nation Cheats 
+            </p>
             </div>
           </div>
         </div>
