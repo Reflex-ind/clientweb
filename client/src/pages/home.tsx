@@ -184,7 +184,7 @@ export default function Home() {
                     <WorkCard key={item.id} item={item} />
                   ))}
                 </div>
-              </motion.div>
+              </section>
             </motion.div>
           )}
 
